@@ -1,10 +1,14 @@
 # skyrim-mouse-holder
 This program centers the mouse while playing Skyrim to avoid accidently scrolling on secondary monitors.
 
-_Only Supports Windows for now._
+___Only Supports Windows for now.___
 
-It doesn't do any fancy exe/ddl checking, just checks the focused window's title to see if it matches "Skyrim" or "Skyrim Special Edition" and centers the mouse on the screen if it does.
+### Installation
+Just check the releases on the right and download and run the exe before or after launching your game!
 
-I have it move the mouse back to the center of the screen a few times a second, so you could be able to scroll if you scroll wheel while also jerk the move to another monitor, but just don't do that.
+If you don't trust strange exe files, you can clone this repo and build the tool for yourself.
 
-I know I could properly intercept the MouseEvent and recenter based on that, but Rust libraries around that area aren't that great and I've already done as much native Windows programming as I want to for now. Maybe later.
+### Developer notes
+This program doesn't do any fancy exe/ddl checking, just checks the focused window's title to see if it matches "Skyrim" or "Skyrim Special Edition" and centers the mouse on the screen if it does. So it probably won't work on non-English versions of the game, sorry. But it's easy enough to change, just change the strings in the main.rs file and rebuild your own exe!
+
+I have it move the mouse back to the center of the screen a few times a second, so you could be able to scroll if you scroll wheel while also jerk the move to another monitor, but just don't do that. I know I could properly intercept the MouseEvent and recenter based on that, but Rust libraries around that area aren't that great yet and I've already done as much native Windows programming as I want to for now so it will be a task I will think about later.
