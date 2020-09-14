@@ -1,5 +1,5 @@
 # skyrim-mouse-holder
-This program centers the mouse while playing Skyrim to avoid accidently scrolling on secondary monitors.
+This program centers the mouse while playing Skyrim to avoid accidentally scrolling on secondary monitors.
 
 ___Only Supports Windows for now.___
 
